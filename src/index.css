@@ -18,3 +18,56 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.defaultMessage {
+    display: flex;
+    align-items: flex-end;
+}
+
+.defaultMessageAvatarInner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+}
+
+.defaultMessageAvatar {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.defaultMessageTime {
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.defaultMessageBox {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+    svg {
+        position: relative;
+        z-index: 1;
+        width: 14px;
+        height: 11px;
+    }
+}
+
+.defaultMessageBoxInner {
+    padding: 8px 13px;
+    max-width: 400px;
+}
+
+.defaultMessageName {
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.defaultMessageText {
+}

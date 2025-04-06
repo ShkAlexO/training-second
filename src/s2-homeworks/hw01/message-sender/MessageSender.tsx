@@ -1,6 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react'
-import { message0 } from '../HW1'
+import {friendMessage0, message0} from '../HW1'
 import s from './MessageSender.module.css'
+import s2 from '../../../s1-main/App.module.css'
+import Message from "../message/Message";
+import FriendMessage from "../friend-message/FriendMessage";
 
 // компонента, которая тестирует вашу компоненту (не изменять, any не трогать)
 const MessageSender = (props: any) => {
@@ -41,33 +44,42 @@ const MessageSender = (props: any) => {
 
     return (
         <>
-            {messages.map((m) => (
-                <M key={'message' + m.id} message={m} />
-            ))}
+            <div className={`${s2.container} ${s.inner}`}>
+                <Message message={message0}/>
+                <FriendMessage message={friendMessage0}/>
+
+                {messages.map((m) => (
+                    <M key={'message' + m.id} message={m}/>
+                ))}
+            </div>
 
             <div id={'hw1-send-message-form'} className={s.sendForm}>
-                <textarea
-                    id={'hw1-textarea'}
-                    className={s.textarea}
-                    ref={textareaRef}
+                <div className={s2.container}>
+                    <div className={s.innerForm}>
+                        <textarea
+                            id={'hw1-textarea'}
+                            className={s.textarea}
+                            ref={textareaRef}
 
-                    title={'Shift+Enter for send'}
-                    placeholder={'Type your message'}
-                    value={text}
+                            title={'Shift+Enter for send'}
+                            placeholder={'Type your message'}
+                            value={text}
 
-                    onChange={onChange}
-                    onKeyDown={onKeyDown}
-                />
-                <button
-                    id={'hw1-button'}
-                    className={s.button}
+                            onChange={onChange}
+                            onKeyDown={onKeyDown}
+                        />
+                        <button
+                            id={'hw1-button'}
+                            className={s.button}
 
-                    onClick={addMessage}
-                >
-                    {/*текст кнопки могут изменить студенты*/}
-                    Send
-                    {/**/}
-                </button>
+                            onClick={addMessage}
+                        >
+                            {/*текст кнопки могут изменить студенты*/}
+                            Send
+                            {/**/}
+                        </button>
+                    </div>
+                </div>
             </div>
         </>
     )

@@ -1,13 +1,39 @@
-.sendForm {
+.inner {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    row-gap: 30px;
+}
 
+.sendForm {
+    padding-block: 30px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.innerForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 50px;
+    align-items: center;
 }
 
 .textarea {
-
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: calc(1.5em + 20px)!important;
+    line-height: 1.4em;
+    resize: none;
 }
 
 .button {
-
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: #0066CC;
+    padding: 10px 30px;
 }
 
 .button:hover {

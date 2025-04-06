@@ -1,13 +1,26 @@
 .message {
-
+    margin-left: auto;
 }
 
 .imageAndText {
 
 }
 
-.imageAndText img {
+.imageAndTime img {
 
+}
+
+
+.messageBoxInner {
+    background: #0066CC;
+    color: #FFFFFF;
+    border-top-right-radius: 6px;
+}
+
+.text {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: -2px 1px 1px 0px rgba(29, 33, 38, 0.1);
 }
 
 .text {
@@ -19,7 +32,7 @@
 }
 
 .name {
-
+    text-align: end;
 }
 
 .messageText {

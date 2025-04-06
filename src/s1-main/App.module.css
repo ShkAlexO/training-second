@@ -2,10 +2,34 @@
     --header_height: 60px;
 }
 
-.hw {
-
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding-inline: 15px;
+    margin-inline: auto;
 }
 
-.hwTitle {
-
+.wrap {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+    padding-block: 130px;
 }
+
+.title {
+    padding-bottom: 25px;
+}
+
+.titleInner {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.messageSender {
+    padding-block: 30px;
+}
+
+
+
+
+

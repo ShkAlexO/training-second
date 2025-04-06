@@ -2,7 +2,7 @@
 
 }
 
-.friendImageAndText {
+.imageAndTime {
 
 }
 
@@ -10,8 +10,18 @@
 
 }
 
-.friendText {
+.friendImageAndTime {
 
+}
+
+.messageBoxInner {
+    background: #F5F7FB;
+ border-top-left-radius: 6px;
+}
+.friendText {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 2px 1px 1px 0px rgba(29, 33, 38, 0.1);
 }
 
 .friendText:after {
