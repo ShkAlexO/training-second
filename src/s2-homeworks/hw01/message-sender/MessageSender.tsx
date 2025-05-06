@@ -1,7 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react'
 import {friendMessage0, message0} from '../HW1'
 import s from './MessageSender.module.css'
-import s2 from '../../../s1-main/App.module.css'
 import Message from "../message/Message";
 import FriendMessage from "../friend-message/FriendMessage";
 
@@ -44,7 +43,7 @@ const MessageSender = (props: any) => {
 
     return (
         <>
-            <div className={`${s2.container} ${s.inner}`}>
+            <div className={`container ${s.inner}`}>
                 <Message message={message0}/>
                 <FriendMessage message={friendMessage0}/>
 
@@ -54,7 +53,7 @@ const MessageSender = (props: any) => {
             </div>
 
             <div id={'hw1-send-message-form'} className={s.sendForm}>
-                <div className={s2.container}>
+                <div className={'container'}>
                     <div className={s.innerForm}>
                         <textarea
                             id={'hw1-textarea'}

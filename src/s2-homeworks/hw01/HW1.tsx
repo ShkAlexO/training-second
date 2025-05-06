@@ -56,7 +56,7 @@ const HW1 = () => {
         <div id={'hw1'} className={s2.wrap}>
             <div className={s2.title}>
                 <div className={s2.titleInner}>
-                    <div className={s2.container}>
+                    <div className={'container'}>
                         <h1>Hometask № 1</h1>
                     </div>
                 </div>

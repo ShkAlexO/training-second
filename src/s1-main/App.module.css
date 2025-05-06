@@ -2,18 +2,11 @@
     --header_height: 60px;
 }
 
-.container {
-    width: 100%;
-    max-width: 1170px;
-    padding-inline: 15px;
-    margin-inline: auto;
-}
-
 .wrap {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100dvh;
-    padding-block: 130px;
+    padding-block: 60px;
 }
 
 .title {

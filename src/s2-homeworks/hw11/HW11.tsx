@@ -24,7 +24,7 @@ function HW11() {
             <div className={s2.hwTitle}>Homework #11</div>
 
             <div className={s2.hw}>
-                <div className={s.container}>
+                <div className={'container'}>
                     <div className={s.wrapper}>
                         <span id={'hw11-value'} className={s.number}>{value1}</span>
                         <SuperRange

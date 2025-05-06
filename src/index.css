@@ -71,3 +71,10 @@ code {
 
 .defaultMessageText {
 }
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
