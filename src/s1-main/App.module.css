@@ -6,7 +6,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100dvh;
-    padding-block: 60px;
+    padding-bottom: 50px;
 }
 
 .title {

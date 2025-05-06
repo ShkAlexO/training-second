@@ -1,6 +1,11 @@
 .button {
     padding: 10px 25px;
     border-radius: 4px;
+    cursor:  pointer;
+    color:  white;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 600;
 }
 
 .disabled {
@@ -8,16 +13,19 @@
 }
 
 .secondary {
+    color: black;
     background: transparent;
-    border: 1px solid #0066CC;
+    border-color: #0066CC;
 }
 
 .default {
     background: #0066CC;
+    border-color: #0066CC;
 }
 
 .red {
     background: #CC1439;
+    border-color: #CC1439;
 }
 
 .default:hover {
