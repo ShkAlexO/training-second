@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-second/static/css/main.4b87dd33.css",
-    "main.js": "/training-second/static/js/main.9f87eef8.js",
+    "main.css": "/training-second/static/css/main.4ac80cf1.css",
+    "main.js": "/training-second/static/js/main.d4445545.js",
     "static/js/787.66cb4309.chunk.js": "/training-second/static/js/787.66cb4309.chunk.js",
     "static/media/200.svg": "/training-second/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
     "static/media/error.svg": "/training-second/static/media/error.5a3135f381b00b53044eff200e725391.svg",
@@ -13,12 +13,15 @@
     "static/media/checked.svg": "/training-second/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/training-second/index.html",
     "static/media/burger.svg": "/training-second/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.4b87dd33.css.map": "/training-second/static/css/main.4b87dd33.css.map",
-    "main.9f87eef8.js.map": "/training-second/static/js/main.9f87eef8.js.map",
+    "static/media/default-arrows.svg": "/training-second/static/media/default-arrows.82be5adb1b751c50d996cd22beed7ded.svg",
+    "static/media/down-arrow.svg": "/training-second/static/media/down-arrow.84608c11f30550bbfe9dc58dff6d4ddb.svg",
+    "static/media/up-arrow.svg": "/training-second/static/media/up-arrow.3f53e1ada336d4a2b89dabfb878c65f9.svg",
+    "main.4ac80cf1.css.map": "/training-second/static/css/main.4ac80cf1.css.map",
+    "main.d4445545.js.map": "/training-second/static/js/main.d4445545.js.map",
     "787.66cb4309.chunk.js.map": "/training-second/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b87dd33.css",
-    "static/js/main.9f87eef8.js"
+    "static/css/main.4ac80cf1.css",
+    "static/js/main.d4445545.js"
   ]
 }
