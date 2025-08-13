@@ -48,39 +48,54 @@ const HW15 = () => {
     const [techs, setTechs] = useState<TechType[]>([])
 
     const sendQuery = (params: any) => {
+        console.log()
         setLoading(true)
         getTechs(params)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
+                res?.data.techs && setTechs(res.data.techs)
                 //
+                res?.data.techs && setTotalCount(res?.data.totalCount)
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
-        // setPage(
-        // setCount(
+        setPage(newPage)
+        setCount(newCount)
 
         // sendQuery(
-        // setSearchParams(
-
+        setSearchParams({
+            page: newPage.toString(),
+            count: newCount.toString(),
+            sort
+        })
         //
+        const params = { page: newPage, count: newCount, sort }
+        sendQuery(params)
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
         // setSort(
+        setSort(newSort)
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
-        // sendQuery(
-        // setSearchParams(
-
+        setPage(1)
         //
+        const params = {
+            page: 1,
+            count,
+            sort: newSort,
+        }
+
+        setSearchParams({
+            page: '1',
+            count: count.toString(),
+            sort: newSort,
+        })
+
+        sendQuery(params)
     }
 
     useEffect(() => {
@@ -88,8 +103,9 @@ const HW15 = () => {
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
+        console.log(params)
     }, [])
-
+           
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
             <div id={'hw15-tech-' + t.id} className={s.tech}>
